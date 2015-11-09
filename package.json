@@ -1,0 +1,47 @@
+{
+  "name": "preact-compat-example",
+  "version": "0.2.0",
+  "description": "A demo showing how to use preact-compat to work with the react-toolbox library with Preact instead of React.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ENVIRONMENT=dev webpack-dev-server",
+    "start": "http-server build -p ${PORT:-8080}",
+    "prestart": "npm run build",
+    "build": "mkdir -p build && ENVIRONMENT=production webpack -p",
+    "deploy": "gh-pages -d build"
+  },
+  "keywords": [
+    "preact",
+    "preact-compat"
+  ],
+  "author": "Jason Miller <jason@developit.ca>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.1.0",
+    "babel-core": "^5.8.33",
+    "babel-loader": "^5.3.3",
+    "babel-plugin-react-transform": "^1.1.1",
+    "css-loader": "^0.21.0",
+    "extract-text-webpack-plugin": "^0.9.1",
+    "html-webpack-plugin": "^1.6.2",
+    "http-server": "^0.8.5",
+    "node-sass": "^3.4.1",
+    "normalize.css": "^3.0.3",
+    "postcss-loader": "^0.7.0",
+    "sass-loader": "^3.1.1",
+    "source-map-loader": "^0.1.5",
+    "style-loader": "^0.13.0",
+    "toolbox-loader": "0.0.3",
+    "webpack": "^1.12.3",
+    "webpack-dev-server": "^1.10.1"
+  },
+  "dependencies": {
+    "preact": "^1.5.1",
+    "preact-compat": "^0.3.1",
+    "proptypes": "^0.14.1",
+    "react": "^0.14.2",
+    "react-addons-css-transition-group": "^0.14.2",
+    "react-dom": "^0.14.2",
+    "react-toolbox": "^0.11.4"
+  }
+}
