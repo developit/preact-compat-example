@@ -44,7 +44,9 @@ module.exports = {
 		new webpack.NoErrorsPlugin(),
 		new ExtractTextPlugin('style.css', { allChunks: true }),
 		new webpack.optimize.DedupePlugin(),
-		new HtmlWebpackPlugin()
+		new HtmlWebpackPlugin({
+			template: 'src/index.html'
+		})
 	]).concat(process.env.ENVIRONMENT==='production' ? [
 		new webpack.DefinePlugin({
 			'process.env.NODE_ENV': JSON.stringify('production')
