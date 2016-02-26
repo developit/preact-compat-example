@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "ENVIRONMENT=dev webpack-dev-server",
-    "start": "http-server build -p ${PORT:-8080}",
+    "start": "superstatic build -p ${PORT:-8080} --host 0.0.0.0 --gzip -c '{\"rewrites\": [{\"source\":\"**\",\"destination\":\"index.html\"}],\"headers\":[{\"source\":\"**\",\"headers\":[{\"key\":\"Cache-Control\",\"value\":\"max-age=86400\"}]}]}'",
     "prestart": "npm run build",
     "build": "mkdir -p build && ENVIRONMENT=production webpack -p",
     "deploy": "gh-pages -d build"
@@ -30,7 +30,6 @@
     "babel-preset-stage-0": "^6.5.0",
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^0.9.1",
-    "http-server": "^0.8.5",
     "html-webpack-plugin": "^1.7.0",
     "node-sass": "^3.4.2",
     "normalize.css": "^3.0.3",
@@ -38,6 +37,7 @@
     "sass-loader": "^3.1.2",
     "source-map-loader": "^0.1.5",
     "style-loader": "^0.13.0",
+    "superstatic": "^4.0.2",
     "toolbox-loader": "0.0.3",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"
