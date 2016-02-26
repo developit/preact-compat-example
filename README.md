@@ -2,7 +2,7 @@
 
 This is a demo showing [preact-compat] being leveraged to make use of [react-toolbox] library with [Preact] instead of React.
 
-The React-based demo was 1.8mb of JavaScript. This demo, using exactly the same code and with the same functionality, is **60kb**.
+The React-based demo was 1.8mb of JavaScript. This demo, using exactly the same code and with the same functionality, is 60kb - or **14.3kb when gzipped**.
 
 
 **[Live Demo](http://developit.github.io/preact-compat-example/)**
