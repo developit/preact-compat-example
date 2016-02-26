@@ -1,6 +1,3 @@
 {
-  "loose": "all",
-  "stage": 0,
-  "sourceMaps": true,
-  "nonStandard": true
+  "presets": ["es2015-minimal", "stage-0", "react"]
 }
