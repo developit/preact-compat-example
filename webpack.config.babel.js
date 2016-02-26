@@ -45,7 +45,7 @@ module.exports = {
 		new ExtractTextPlugin('style.css', { allChunks: true }),
 		new webpack.optimize.DedupePlugin(),
 		new HtmlWebpackPlugin()
-	]).concat(process.env.ENVIRONMENT==='production' ? [] : [
+	]).concat(process.env.ENVIRONMENT==='production' ? [
 		new webpack.DefinePlugin({
 			'process.env.NODE_ENV': JSON.stringify('production')
 		}),
@@ -53,7 +53,7 @@ module.exports = {
 		new webpack.optimize.UglifyJsPlugin({
 			output: { comments: false }
 		})
-	]),
+	] : []),
 	stats: { colors: true },
 	devtool: 'source-map',
 	devServer: {
