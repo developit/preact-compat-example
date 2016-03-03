@@ -46,7 +46,7 @@
     "classnames": "^2.2.3",
     "core-js": "^2.1.1",
     "preact": "^4.1.1",
-    "preact-compat": "^1.4.0",
+    "preact-compat": "^1.5.0",
     "preact-router": "^1.2.4",
     "proptypes": "^0.14.3",
     "rc-css-transition-group": "^2.1.4",
