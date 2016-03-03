@@ -7,21 +7,21 @@ export default class Home extends React.Component {
     return (
       <nav>
         <Link href="/autocomplete-example" label="Autocomplete" />
-        <Link href="/avatar-example" label="Avatar (FAIL, inline SVG remains invisible)" />
-        <Link href="/button-example" label="Button (FAIL, inline SVG remains invisible)" />
+        <Link href="/avatar-example" label="Avatar" />
+        <Link href="/button-example" label="Button" />
         <Link href="/card-example" label="Card" />
         <Link href="/checkbox-example" label="Checkbox" />
         <Link href="/datepicker-example" label="Datepicker (FAIL, not setting initial state for date2 causes error, but with setting it, also error)"/>
         <Link href="/dialog-example" label="Dialog" />
         <Link href="/drawer-example" label="Drawer" />
-        <Link href="/dropdown-example" label="Dropdown (OK, but Dropdown height is less then at original example)"/>
+        <Link href="/dropdown-example" label="Dropdown"/>
         <Link href="/fonticon-example" label="Fonticon" />
         <Link href="/input-example" label="Input" />
         <Link href="/link-example" label="Link" />
         <Link href="/list-example" label="List" />
         <Link href="/menu-example" label="Menu (FAIL, menu remains invisible)" />
         <Link href="/navigation-example" label="Navigation" />
-        <Link href="/progressbar-example" label="Progress Bar (partial FAIL, 'circular' wich is inline SVG, remains invisible)" />
+        <Link href="/progressbar-example" label="Progress Bar" />
         <Link href="/radio-example" label="Radio Buttons (FAIL, but why ???)" />
         <Link href="/ripple-example" label="Ripple" />
         <Link href="/slider-example" label="Slider" />
