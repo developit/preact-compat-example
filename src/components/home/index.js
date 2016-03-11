@@ -27,7 +27,7 @@ export default class Home extends React.Component {
       ["snackbar-example", "Snackbar"],
       ["switch-example", "Switch"],
       ["table-example", "Table"],
-      ["tabs-example", "Tabs (FAIL: Cannot read property 'getBoundingClientRect' of undefined)"],
+      ["tabs-example", "Tabs"],
       ["tooltip-example", "Tooltips"],
       ["timepicker-example", "Timepicker (FAIL: Cannot read property 'handleCalculateShape' of undefined)"]
     ]
