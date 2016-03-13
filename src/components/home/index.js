@@ -18,7 +18,7 @@ export default class Home extends React.Component {
       ["input-example", "Input"],
       ["link-example", "Link"],
       ["list-example", "List"],
-      ["menu-example", "Menu (FAIL, menu remains invisible)"],
+      ["menu-example", "Menu"],
       ["navigation-example", "Navigation"],
       ["progressbar-example", "Progress Bar"],
       ["radio-example", "Radio Buttons"],
