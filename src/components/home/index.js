@@ -34,7 +34,7 @@ export default class Home extends React.Component {
   };
 
   linkClick(e) {
-    route(this.getAttribute('href'));
+    route((e.currentTarget || e.target).getAttribute('href'));
     return e.preventDefault(), false;
   }
 

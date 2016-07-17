@@ -45,9 +45,9 @@
   "dependencies": {
     "classnames": "^2.2.3",
     "core-js": "^2.1.1",
-    "preact": "^4.1.1",
-    "preact-compat": "^1.5.0",
-    "preact-router": "^1.2.4",
+    "preact": "^5.3.0",
+    "preact-compat": "^2.0.0",
+    "preact-router": "^2.0.0",
     "proptypes": "^0.14.3",
     "rc-css-transition-group": "^2.1.4",
     "react-toolbox": "^0.14.1"

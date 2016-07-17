@@ -11,6 +11,10 @@ module.exports = {
 		filename: 'bundle.js'
 	},
 	resolve: {
+		modulesDirectories: [
+			path.resolve(__dirname, 'node_modules'),
+			'node_modules'
+		],
 		extensions: ['', '.jsx', '.scss', '.js', '.json'],
 		alias: {
 			'react': 'preact-compat',
@@ -20,10 +24,10 @@ module.exports = {
 	},
 	module: {
 		preLoaders: [
-			{
-				exclude: /src\//,
-				loader: 'source-map'
-			}
+			// {
+			// 	exclude: /src\//,
+			// 	loader: 'source-map'
+			// }
 		],
 		loaders: [
 			{
@@ -43,8 +47,8 @@ module.exports = {
 	postcss: [autoprefixer],
 	plugins: ([
 		new webpack.NoErrorsPlugin(),
-		new ExtractTextPlugin('style.css', { allChunks: true }),
 		new webpack.optimize.DedupePlugin(),
+		new ExtractTextPlugin('style.css', { allChunks: true }),
 		new HtmlWebpackPlugin({
 			template: 'src/index.html'
 		})
