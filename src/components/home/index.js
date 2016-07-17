@@ -10,7 +10,7 @@ export default class Home extends React.Component {
       ["button-example", "Button"],
       ["card-example", "Card"],
       ["checkbox-example", "Checkbox"],
-      ["datepicker-example", "Datepicker (FAIL, not setting initial state for date2 causes error, but with setting it, also error)"],
+      ["datepicker-example", "Datepicker"],
       ["dialog-example", "Dialog"],
       ["drawer-example", "Drawer"],
       ["dropdown-example", "Dropdown"],
@@ -29,7 +29,7 @@ export default class Home extends React.Component {
       ["table-example", "Table"],
       ["tabs-example", "Tabs"],
       ["tooltip-example", "Tooltips"],
-      ["timepicker-example", "Timepicker (FAIL: Cannot read property 'handleCalculateShape' of undefined)"]
+      ["timepicker-example", "Timepicker"]
     ]
   };
 
